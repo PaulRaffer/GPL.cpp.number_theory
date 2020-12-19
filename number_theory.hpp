@@ -9,10 +9,10 @@
 #ifndef RAFFER_NUMBER_THEORY_NUMBER_THEORY_HPP
 #define RAFFER_NUMBER_THEORY_NUMBER_THEORY_HPP
 
-#define raffer_cpplib_numbertheory__          202007L
-#define raffer_cpplib_numbertheory_odd_even__ 202005L
-#define raffer_cpplib_numbertheory_prime__    202007L
-#define raffer_cpplib_numbertheory_digit__    202006L
+#define raffer_cpplib_number_theory__          202007L
+#define raffer_cpplib_number_theory_odd_even__ 202005L
+#define raffer_cpplib_number_theory_prime__    202007L
+#define raffer_cpplib_number_theory_digit__    202006L
 
 
 #include <cmath>
