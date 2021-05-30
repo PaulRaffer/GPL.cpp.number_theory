@@ -6,19 +6,19 @@
 
 #if __cplusplus >= 202002L
 
-#ifndef RAFFER_NUMBER_THEORY_NUMBER_THEORY_HPP
-#define RAFFER_NUMBER_THEORY_NUMBER_THEORY_HPP
+#ifndef GPL_NUMBER_THEORY_NUMBER_THEORY_HPP
+#define GPL_NUMBER_THEORY_NUMBER_THEORY_HPP
 
-#define raffer_cpplib_number_theory__          202007L
-#define raffer_cpplib_number_theory_odd_even__ 202005L
-#define raffer_cpplib_number_theory_prime__    202007L
-#define raffer_cpplib_number_theory_digit__    202006L
+#define gpl_cpplib_number_theory__          202007L
+#define gpl_cpplib_number_theory_odd_even__ 202005L
+#define gpl_cpplib_number_theory_prime__    202007L
+#define gpl_cpplib_number_theory_digit__    202006L
 
 
 #include <cmath>
 
 
-namespace raffer // interface
+namespace gpl // interface
 {
 
 [[nodiscard]] constexpr auto is_odd(std::integral auto x);
@@ -30,17 +30,25 @@ namespace raffer // interface
 
 [[nodiscard]] auto digit(auto x, int d, int n = 1, int base = 10) -> int;
 
-} // namespace raffer
+} // namespace gpl
 
 
 
 
 
-namespace raffer // implementation
+namespace gpl // implementation
 {
 
-constexpr auto is_odd(std::integral auto x) { return x & 1; }
-constexpr auto is_even(std::integral auto x) { return !is_odd(x); }
+constexpr auto is_odd(std::integral auto x)
+{
+	return x & 1;
+}
+
+constexpr auto is_even(std::integral auto x)
+{
+	return !is_odd(x);
+}
+
 
 constexpr auto is_prime(std::integral auto x)
 {
@@ -72,9 +80,9 @@ auto digit(auto x, int d, int n, int base) -> int
 }
 
 
-} // namespace raffer
+} // namespace gpl
 
 
-#endif // RAFFER_NUMBER_THEORY_NUMBER_THEORY_HPP
+#endif // GPL_NUMBER_THEORY_NUMBER_THEORY_HPP
 
 #endif // __cplusplus >= 202002L
